@@ -1,0 +1,6 @@
+- name: webservers.yml | All roles
+  hosts: webservers
+  sudo: True
+
+  roles:
+    - nginx
