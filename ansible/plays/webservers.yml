@@ -1,6 +1,8 @@
 - name: webservers.yml | All roles
   hosts: webservers
-  sudo: True
+  become: True
 
-  roles:
-    - nginx
+  tasks:
+    - name: hello
+      shell: ifconfig
+
