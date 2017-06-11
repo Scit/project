@@ -2,7 +2,6 @@
   hosts: webservers
   become: True
 
-  tasks:
-    - name: hello
-      shell: ifconfig
-
+  roles:
+    - nginx
+    - node

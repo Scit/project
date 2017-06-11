@@ -1,0 +1,7 @@
+- src: jdauphant.nginx
+  version: "v2.8"
+  name: nginx
+
+- src: geerlingguy.nodejs
+  version: "4.1.1"
+  name: node
