@@ -1,4 +1,9 @@
 .idea/
+
 .vagrant/
+
 ansible/roles/external/
+
 vpass
+
+/node_modules
