@@ -1,0 +1,5 @@
+- name: Test
+  copy:
+    src: '{{ inventory_dir }}/../app'
+    dest: /opt
+  tags: app
