@@ -1,5 +1,21 @@
-- name: Test
+- name: "Copy project to opt"
   copy:
     src: '{{ inventory_dir }}/../app'
     dest: /opt
-  tags: app
+
+- name: "Install dependencies"
+  npm:
+    path: /opt/app
+    state: latest
+
+- name: "Install forever (to run Node.js app)."
+  npm: name=forever global=yes state=present
+
+- name: "Check list of Node.js apps running."
+  command: forever list
+  register: forever_list
+  changed_when: false
+
+- name: "Start Node.js app."
+  command: forever start -c "npm start" --sourceDir /opt/app/ .
+  when: "forever_list.stdout.find('/opt/app') == -1"
