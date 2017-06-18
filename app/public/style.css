@@ -6,7 +6,7 @@ body {
 .contentContainer {
     background-color: white;
     border-radius: 10px 10px 5px 5px;
-    min-height: 800px;
+    min-height: 200px;
     width: 800px;
     margin: auto;
     margin-bottom: 50px;
@@ -71,4 +71,17 @@ body {
 
 .footer__content {
     margin-right: 20px;
+}
+
+.regularContent {
+    padding: 70px 50px;
+}
+
+.regularContent__title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.regularContent__text {
+    line-height: 1.5em;
 }
