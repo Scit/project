@@ -6,4 +6,4 @@ ansible/roles/external/
 
 vpass
 
-/node_modules
+node_modules/
