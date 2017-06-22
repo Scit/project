@@ -7,7 +7,7 @@ body {
     background-color: white;
     border-radius: 10px 10px 5px 5px;
     min-height: 200px;
-    width: 800px;
+    width: 900px;
     margin: auto;
     margin-bottom: 50px;
 }
@@ -86,16 +86,17 @@ body {
     line-height: 1.5em;
 }
 
-.primaryContent:after {
-    content: '';
-    clear: both;
-    display: table;
+.primaryContent {
+    position: relative;
+    height: 400px;
 }
 
 .primaryContent__textContainer {
-    display: inline-block;
-    background-color: blue;
-    width: 60%;
+    position: absolute;
+    padding-left: 50px;
+    top: 30%;
+    left: 0;
+    width: 50%;
 }
 
 .primaryContent__personName {
@@ -109,13 +110,38 @@ body {
 }
 
 .primaryContent__photoContainer {
+    position: absolute;
     background-color: red;
-    display: inline-block;
-    float: right;
-    width: 40%;
+    right: 0;
+    height: 100%;
+    width: auto;
 }
 
 .primaryContent__photo {
+    border-radius: 0 10px 5px 0;
+    height: 100%;
+}
+
+
+.galleryContent {
+    padding: 70px 50px;
+}
+
+.galleryContent__tilesContainer:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.galleryContent__tileWrapper {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 33.3%;
+    float: left;
+}
+
+.galleryContent__tile {
+    background-color: aqua;
+    height: 200px;
     width: 100%;
-    height: auto;
 }
