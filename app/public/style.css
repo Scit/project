@@ -136,6 +136,7 @@ body {
 .galleryContent__tileWrapper {
     padding-left: 20px;
     padding-bottom: 20px;
+    box-sizing: border-box;
     width: 33.3%;
     float: left;
 }
